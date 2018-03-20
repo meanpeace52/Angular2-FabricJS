@@ -1,0 +1,195 @@
+<div id="print-builder" class="row no-gutters">
+    <div id="left-panel" class="ui-bg-light-grey" [ngClass]="isCollapse ? 'collapsed': 'expanded'">
+    	<nav class="nav nav-pills nav-justified ui-right-title flex-lg-nowrap">
+    		<a class="nav-item nav-link" (click)="leftPanel='designs'" [ngClass]="{'active': leftPanel==='designs'}"><i class="fa fa-paint-brush"></i>Designs</a>
+    		<a class="nav-item nav-link" (click)="leftPanel='edit'" [ngClass]="{'active': leftPanel==='edit'}"><i class="fa fa-edit"></i>Edit</a>
+    		<a class="nav-item nav-link" (click)="leftPanel='layouts'" [ngClass]="{'active': leftPanel==='layouts'}"><i class="fa fa-object-group"></i>Layouts</a>
+    	</nav>
+	    <div class="btn-collapse" (click)="updateCollapse()">
+			<i class="fa" [ngClass]="isCollapse? 'fa-angle-double-right':'fa-angle-double-left'" aria-hidden="true"></i>
+		</div>
+    	<div class="panel-left">
+	    	<div class="design-panel" [hidden]="leftPanel!='designs'">
+	    		<ul [hidden]="draftCard">
+	    			<li *ngFor="let image of product_designs"  class="designs">
+		    			<div *ngIf="cardType == image.type">
+		    				<img [src]="image.template.front" class="front" (click)="setInitCanvas(image, 'front')">					
+						    <img [src]="image.template.back" class="back" (click)="setInitCanvas(image, 'back')">
+		    			</div>
+					</li>
+	    		</ul>
+	    		<ul *ngIf="draftCard">
+	    			<li>
+		    			<div>
+		    				<img [src]="draftCard.frontImage" class="front">
+						    <img [src]="draftCard.backImage" class="back">
+						    <!-- <img [src]="draftCard.frontImage" class="front" (click)="setInitCanvas(draftCard, 'front')">
+						    <img [src]="draftCard.backImage" class="back" (click)="setInitCanvas(draftCard, 'back')"> -->
+		    			</div>
+					</li>
+	    		</ul>
+	    	</div>
+	    	<div class="edit-panel" [hidden]="leftPanel!='edit'">
+	    		<div class="actions section col-md-12">
+	    			<label>Actions</label>
+	    			<button id="undo" class="btn btn-default"><i class="fa fa-undo"></i>Undo</button>
+	    			<button id="redo" class="btn btn-default"><i class="fa fa-rotate-right"></i>Redo</button>
+	    		</div>
+	    		<div class="label section col-md-12">
+	    			<label>Label</label>
+	    			<div class="input-group">
+						<input type="text" class="form-control label-text" placeholder="label..." [(ngModel)]="label">
+						<span class="input-group-btn">
+							<button class="btn btn-default" [ngClass]="{'active': hasLabel}" type="button" (click)="saveLabel();">Save</button>
+						</span>
+				    </div>
+	    		</div>
+	    		<div class="edit-text section col-md-12">
+	    			<label>Edit Text: <span>John Doe</span></label>
+	    			<select class="form-control" id="ui-fonts">
+						<option value="Arial">Font: Arial</option>
+						<option value="Helvetica">Font: Helvetica</option>
+						<option value="Myriad Pro">Font: Myriad Pro</option>
+						<option value="Delicious">Font: Delicious</option>
+						<option value="Verdana">Font: Verdana</option>
+	                </select>
+	                <select class="form-control" id="ui-font-size">
+						<option value="12">Size: 12pt</option>
+						<option value="14">Size: 14pt</option>
+						<option value="16">Size: 16pt</option>
+						<option value="18">Size: 18pt</option>
+						<option value="20">Size: 20pt</option>						
+	                </select>
+	                <div id="ui-font-color">
+	                	<div class="color-selector form-control" (click)="isColorOpt==true? isColorOpt=false : isColorOpt=true">
+	                		<span [attr.id]="colorId" class="selected-color"></span>
+	                	</div>
+	                	<ul class="colors" [hidden]="!isColorOpt">
+	                		<li id="white" class="color-option" (click)="colorId='white'; isColorOpt=!isColorOpt"></li>
+	                		<li id="yellow" class="color-option" (click)="colorId='yellow'; isColorOpt=!isColorOpt"></li>
+	                		<li id="orange" class="color-option" (click)="colorId='orange'; isColorOpt=!isColorOpt"></li>
+	                		<li id="green" class="color-option" (click)="colorId='green'; isColorOpt=!isColorOpt"></li>
+	                		<li id="blue" class="color-option" (click)="colorId='blue'; isColorOpt=!isColorOpt"></li>
+	                		<li id="red" class="color-option" (click)="colorId='red'; isColorOpt=!isColorOpt"></li>
+	                		<li id="black" class="color-option" (click)="colorId='black'; isColorOpt=!isColorOpt"></li>
+	                	</ul>
+	                </div>	                	
+	                <div id="ui-font-style">
+	                	<ul>
+	                		<li id="align-left" (click)="textAlign='left'" [ngClass]="{'active': textAlign==='left'}">
+	                			<i class="fa fa-align-left"></i>
+	                		</li>
+	                		<li id="align-center" (click)="textAlign='center'" [ngClass]="{'active': textAlign==='center'}">
+	                			<i class="fa fa-align-center"></i>
+	                		</li>
+	                		<li id="align-right" (click)="textAlign='right'" [ngClass]="{'active': textAlign==='right'}">
+	                			<i class="fa fa-align-right"></i>
+	                		</li>
+	                		<li id="bold" (click)="fontWeight == 'bold' ? fontWeight = '' : fontWeight = 'bold'" [ngClass]="{'active': fontWeight==='bold'}">
+	                			<i class="fa fa-bold"></i>
+	                		</li>
+	                		<li id="italic" (click)="fontWeight == 'italic' ? fontWeight = '' : fontWeight = 'italic'" [ngClass]="{'active': fontWeight==='italic'}">
+	                			<i class="fa fa-italic"></i>
+	                		</li>
+	                	</ul>
+	                </div>
+                </div>
+	    		<div class="add-element section col-md-12">
+	    			<label>Add Elements</label>
+	    			<ul>
+	    				<li><a><input type="file" id="myFile" class="file-upload"><i class="fa fa-image"></i></a><span>Add Images</span></li>
+	    				<li><a id="addText"><i class="fa fa-font"></i></a><span>Add Text</span></li>
+	    				<li><a><i class="fa fa-home"></i></a><span>Add From Listing</span></li>
+	    			</ul>
+	    		</div>
+	    	</div>
+	    	<div class="layout-panel" [hidden]="leftPanel!='layouts'">
+	    		<div class="ui-layout-choice mt-40">
+                    <h3>Layout</h3>
+                    <div class="row no-gutters justify-content-center align-items-center">
+                        <div class="col-md-6 choice">
+                            <div class="form-check d-flex align-items-center justify-content-center layouts" id="horizontal" 
+                            	(click)="layoutPanel='horizontal'" [ngClass]="{'active': layoutPanel==='horizontal'}">
+                                <div class="ui-h-box">
+                                	<i class="fa fa-window-maximize"></i>
+                                </div>
+                                <p class="ui-checkbox-label">Horizontal</p>
+                                <div class="ui-border-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 choice">
+                            <div class="form-check d-flex align-items-center justify-content-center layouts" id="vertical"
+                            	(click)="layoutPanel='vertical'" [ngClass]="{'active': layoutPanel==='vertical'}">
+                                <div class="ui-v-box">
+                                	<i class="fa fa-window-maximize vertical-window"></i>
+                                </div>
+                                <p class="ui-checkbox-label">Vertical</p>
+                                <div class="ui-border-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="ui-layout-choice mt-40" [hidden]="cardType == 'business'">
+                    <h3>Size</h3>
+
+                    <div class="row no-gutters justify-content-center align-items-center">
+                        <div class="col-md-4 choice">
+                            <div class="form-check d-flex align-items-center justify-content-center sizes" id="small"
+                            	(click)="sizePanel='small'" [ngClass]="{'active': sizePanel==='small'}">
+                                <div class="ui-s-box">
+                                	<i class="fa fa-square-o fa-lg"></i>
+                                </div>
+                                <p class="ui-checkbox-label">Small <br/> 6" x 4"</p>
+                                <div class="ui-border-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 choice">
+                            <div class="form-check d-flex align-items-center justify-content-center sizes" id="medium"
+                            	(click)="sizePanel='medium'" [ngClass]="{'active': sizePanel==='medium'}">
+                                <div class="ui-m-box">
+                                	<i class="fa fa-square-o fa-2x"></i>
+                                </div>
+                                <p class="ui-checkbox-label">Medium <br/> 6" x 4"
+                                <div class="ui-border-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 choice">
+                            <div class="form-check d-flex align-items-center justify-content-center sizes" id="large"
+                            	(click)="sizePanel='large'" [ngClass]="{'active': sizePanel==='large'}">
+                                <div class="ui-l-box">
+                                	<i class="fa fa-square-o fa-3x"></i>
+                                </div>
+                                <p class="ui-checkbox-label">Large <br/> 6" x 4"</p>
+                                <div class="ui-border-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+	    	</div>	
+    	</div>    	
+    </div>
+    <div id="right-panel" [ngClass]="isCollapse ? 'expanded': 'collapsed'">
+    	<div class="ui-main-body">
+    		<!-- Preload fonts before load canvas (Marek - 2017.10.18) -->
+    		<div id="ProximaNovaBold" class="preloadFont">.</div>
+    		<div id="ProximaNovaRegular" class="preloadFont">.</div>
+    		<div id="RalewayBold" class="preloadFont">.</div>
+    		<div id="RalewaySemiBold" class="preloadFont">.</div>
+    		<div id="RalewayRegular" class="preloadFont">.</div>
+    		
+	    	<div class="canvas">
+	    		<canvas id="canvas"></canvas>
+	    	</div>
+    	</div>
+    </div>
+    <!-- <div class="ui-main-footer d-flex flex-nowrap align-items-center justify-content-end back-forward" [ngClass]="isCollapse? 'expanded':'collapsed'">
+        <div class="btn-back active" (click)="zoomOut()">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>   
+        </div>
+        <div class="btn-forward active" (click)="zoomIn()">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+    </div> -->
+</div>

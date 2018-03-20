@@ -1,0 +1,22 @@
+<div id="saved_draft">
+    <div class="ui-branding-ess product-ui-item">
+        <h2 class="ui-heading">Saved Drafts</h2>
+        <p class="ui-text">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+            consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit molestie consequat, vel illum dolore
+            eu feugiat.</p>
+
+    <div class="ui-horizontal-list ui-scrollbar">
+        <div class="ui-scoll-inner row">      
+            <div class="col-md-3" *ngFor="let draft of savedDrafts">      
+                <div class="ui-item">
+                    <div *ngIf="getState(draft.frontState)">
+                        <div class="ui-img" (click)="goToSinglePage(draft.cardType, draft.frontImage, draft)">
+                            <img [src]=draft.frontImage class="img-fluid">
+                        </div>
+                        <h4>{{draft.label}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

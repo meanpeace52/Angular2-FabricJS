@@ -1,0 +1,92 @@
+<div class="content-body">
+  <div class="top-content">
+    <!--Here content will be changed for each page-->
+    <div class="topbar row align-items-center">
+      <div class="col-lg-5 col-xl-4 h-100">
+
+        <!--Search Bar-->
+        <div class="input-group ui-search">
+          <input type="search" class="ui-search-query form-control" placeholder="" aria-label="" aria-describedby="search-btn">
+          <span class="input-group-addon" id="search-btn">
+            <button type="button" class="btn"><i class="fa fa-search"></i></button>
+          </span>
+        </div>
+      </div>
+
+      <div class="col col-xl-8 d-flex justify-content-end">
+        <div id="notifications" class="d-flex align-items-center">
+          <a href="javascript:void(0)" class="visible-xs nav-collapse float-left"><i class="fa fa-2x fa-bars"></i></a>
+
+          <ul class="nav mb-0  align-items-center justify-content-end">
+            <li class="visible-xs"><a href="#"><i class="fa fa-2x fa-search"></i></a></li>
+
+            <li class="nav-item dropdown  ui-icon">
+              <a href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-2x fa-envelope"></i></a>
+
+              <div class="dropdown-menu ui-msg-dropdown text-center" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-item">
+                  <div class="ui-header d-flex align-items-center">
+                    <p class="ui-sender w-50">Chase Milner</p>
+                    <p class="ui-time w-50 text-right">19 hours ago</p>
+                  </div>
+
+                  <div class="ui-text">
+                    Looks ready to me! Should we view how the mail and notification areas look when...
+                    <span>Read More</span>
+                  </div>
+
+                  <a href="" class="ui-link"></a>
+                </div>
+
+                <div class="dropdown-divider"></div>
+
+                <div class="dropdown-item" href="#">
+                  <div class="ui-header d-flex align-items-center">
+                    <p class="ui-sender w-50">Chase Milner</p>
+                    <p class="ui-time w-50 text-right">19 hours ago</p>
+                  </div>
+
+                  <div class="ui-text">
+                    Looks ready to me! Should we view how the mail and notification areas look when...
+                    <span>Read More</span>
+                  </div>
+
+                  <a href="" class="ui-link"></a>
+                </div>
+
+                <div class="dropdown-divider"></div>
+
+                <a href="" class="btn ui-btn-black-outline">View All</a>
+              </div>
+            </li>
+
+            <li class="nav-item ui-icon"><a href="#"><i class="fa fa-2x fa-bell"></i></a></li>
+
+            <li class="dropdown nav-item mr-3 hidden-xs">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{user.firstName}} {{user.lastName}} <span class="caret"></span></a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" routerLink="/setting">Settings</a>
+                <a class="dropdown-item">Logout</a>
+              </div>
+            </li>
+
+            <li class="nav-item hidden-xs">
+              <a href="/setting"><img src="{{user.photo}}"></a>
+            </li>
+
+            <li class="dropdown nav-item visible-xs">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <img src="{{user.photo}}"> <span class="caret"></span>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" routerLink="/setting">Settings</a>
+                <a class="dropdown-item">Logout</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

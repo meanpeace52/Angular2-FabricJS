@@ -1,0 +1,57 @@
+#saved_draft {
+    background: #efefef;
+    width: 100%;
+    height: calc(100% - 65px);
+}
+
+.product-ui-item {
+    padding: 3em 2em;
+}
+
+.ui-heading {
+    font-size: 2.222em;
+    padding: 10px 0;
+    margin-bottom: 25px;
+}
+
+.ui-horizontal-list {
+    position: relative;
+}
+
+.ui-horizontal-list .ui-item {
+    margin: 0px 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.ui-horizontal-list .ui-item h4 {
+	color: #193e55;
+}
+
+.ui-horizontal-list .ui-item p {
+	color: #193e55;
+}
+
+.ui-item .ui-img {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui-img .img-fluid:hover {
+    -webkit-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3) !important;
+    -moz-box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3) !important;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.3) !important;
+    cursor: pointer;
+}
+
+.ui-item .ui-img .img-fluid {
+    max-height: 180px;
+    position: relative;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.24);
+    -moz-box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.24);
+}

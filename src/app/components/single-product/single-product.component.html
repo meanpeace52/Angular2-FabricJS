@@ -1,0 +1,37 @@
+<!--Main Body Content-->
+<div class="ui-single-product text-center h-100 w-100">
+
+    <div class="row no-gutters ui-sp-title justify-content-center">
+        <div class="left-col left-panel">
+            <h1 class="ui-left-title h-100">{{cardType}} Cards</h1>
+        </div>
+        <div class="right-col ui-product-lists right-panel">
+            <nav class="nav nav-pills nav-justified ui-right-title h-100 flex-lg-nowrap">
+                <a class="nav-item nav-link" (click)="ipage='type-family'" [ngClass]="{'active': ipage==='type-family'}">
+                    <p><i class="fa fa-check"></i>Choose Type & Family</p>
+                </a>
+                <a class="nav-item nav-link" (click)="ipage='front-builder'" [ngClass]="{'active': ipage==='front-builder'}">
+                    <p><i class="fa fa-check"></i>Customize Front</p>
+                </a>
+                <a class="nav-item nav-link" (click)="ipage='back-builder'" [ngClass]="{'active': ipage==='back-builder'}">
+                    <p><i class="fa fa-check"></i>Customize Back</p>
+                </a>
+                <a class="nav-item nav-link" (click)="ipage='review-order'" [ngClass]="{'active': ipage==='review-order'}">
+                    <p>4. Review & Order</p>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <type-family *ngIf="ipage=='type-family'"></type-family>
+    <print-builder [ipage]="ipage" [hidden]="ipage=='review-order' || ipage=='type-family'" (collapseUpdate)="handleIsCollapse($event)"></print-builder>
+    <review-order  *ngIf="ipage=='review-order'"></review-order>
+    <div class="ui-main-footer d-flex flex-nowrap align-items-center justify-content-end back-forward" [ngClass]="isCollapse? 'expanded':'collapsed'" *ngIf="ipage!='review-order'">
+        <div class="btn-back active" (click)="back()" [ngClass]="{'deactive': ipage=='type-family'}">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>   
+        </div>
+        <div class="btn-forward active" (click)="forward()">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+    </div>
+</div>

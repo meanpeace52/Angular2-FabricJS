@@ -1,0 +1,19 @@
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h4 class="modal-title"></h4>
+			<button type="button" class="close" (click)="cancel()" >&times;</button>
+		</div>
+		<div class="modal-body">
+            <div class="add-csv">
+                <input type="file" name="datasource_upload" accept=".xlsx,.xls,.csv" ngf-max-size="20MB" fd-input (change)="readCsvData($event)" />
+                <div class="btn btn-success btn-add-csv">
+                    <i class="fa fa-upload"></i><p>ADD CSV</p>    
+                </div>                        
+            </div>
+		</div>
+		<div class="modal-footer">
+			<div class="btn-cancel" (click)="cancel()">Cancel</div>
+		</div>
+	</div>
+</div>

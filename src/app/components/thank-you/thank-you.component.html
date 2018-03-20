@@ -1,0 +1,74 @@
+<div class="ui-thank-you-main ui-sc-ty text-center h-100 w-100">
+    <h1 class="ui-heading">Thanks for your order</h1>
+
+    <div class="row text-left">
+        <div class="col-lg-6 mh650">
+            <div class="ui-content-box h-100">
+                <h2 class="ui-title">Lorem ipsum dolor sit amet</h2>
+                <p class="ui-text">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
+                    ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+                    vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                    praesent luptatum zzril delenit.</p>
+                <a href="" class="ui-text ui-link">Click Here to augue duis dolore te feugait nulla facilisi</a>
+
+                <div class="ui-item d-flex flex-wrap">
+                    <img [src]=cardInfo.frontImage class="img-fluid mr-2">
+                    <img [src]=cardInfo.backImage class="img-fluid">
+
+                    <div class="ui-item-desc ml-3 mt-1">
+                        <div class="w-100 d-flex">
+                            <p class="ui-text font-weight-bold w-50">{{cardInfo.cardName}}</p>
+                            <p class="ui-title w-100 text-right mb-0">${{cardInfo.price}}</p>
+                        </div>
+                        <p class="ui-text font-weight-bold">Qty: <span>{{cardInfo.qty}}</span></p>
+                        <div class="d-flex flex-wrap">
+                            <a href="" class="btn ui-btn-black mr-2">View</a>
+                            <div class="share-btn">
+                                <i class="fa fa-share-alt mr-2" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-line-break"></div>                
+            </div>
+        </div>
+        <div class="col-lg-6 mh650">
+            <div class="ui-content-box h-100">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h2 class="ui-title mb-2">Delivery</h2>
+                        <h2 class="ui-title text-capitalize mb-0">John Smith</h2>
+                        <p class="ui-text w-50">123 Street Name Something Else, CA 90210</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="ui-title">Payment</h2>
+                        <p class="ui-text w-50">Mastercard Ending **** **** **** 5602</p>
+                    </div>
+                </div>
+
+                <div class="ui-total mt-sm-5 mt-5">
+                    <h2 class="ui-title mb-1">Order total</h2>
+                    <table>
+                        <tr>
+                            <td class="ui-text w-100 pb-2">Sub Total</td>
+                            <td class="ui-text text-right">${{cardInfo.price}}</td>
+                        </tr>
+                        <tr>
+                            <td class="ui-text w-100 pb-2">Shipping</td>
+                            <td class="ui-text text-right">0.00</td>
+                        </tr>
+                        <tr>
+                            <td class="ui-text w-100 pb-2">Discount</td>
+                            <td class="ui-text text-right">0.00</td>
+                        </tr>
+                        <tr class="ui-bordered-tr">
+                            <td class="ui-text w-100 font-weight-bold">Total</td>
+                            <td class="ui-title text-right pt-2">${{cardInfo.price}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

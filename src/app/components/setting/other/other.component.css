@@ -1,0 +1,76 @@
+.accountInformation{
+    padding: 60px 80px;
+    padding-bottom: 0;
+}
+.information{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+.accountInformation h4{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.singleInfo{
+    margin-bottom: 20px;
+}
+.singleInfo p{
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.singleInfo h4{
+    font-size: 16px;
+    font-weight: 700;
+}
+.singleInfo .btn{
+    width: 100%;
+}
+
+/* custom radio */
+.ui-radio {
+    display: none;
+}
+ 
+.ui-radio + label{
+  position: relative;
+  padding-left: 30px;
+  display: inline-block;
+  font-weight: 700;
+}
+.ui-radio + label:before {
+    background-color: #fff;
+    border: 1px solid #212529;
+    border-radius: 50px;
+    display: inline-block;
+    position: absolute;
+    content: ' ';
+    width: 18px;
+    height: 18px;
+    top: 2px;
+    left:0px;
+}
+ 
+.ui-radio:checked + label:after {
+    content: ' ';
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    position: absolute;
+    background: #212529;
+    top: 5px;
+    left: 3px;
+}
+ 
+.ui-radio:checked + label:before {
+    color: #99a1a7;
+    border: 1px solid #212529;
+}
+/* custom radio end */
+.singleInfo .form-group{
+    margin-bottom: 0;
+}
+@media (min-width:320px) and (max-width:567px) {
+    .accountInformation{
+        padding: 30px;
+    }
+}

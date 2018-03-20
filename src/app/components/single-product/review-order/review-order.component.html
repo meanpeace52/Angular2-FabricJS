@@ -1,0 +1,188 @@
+<div class="row no-gutters review-section">
+    <div id="left-panel" class="ui-bg-light-grey">
+
+        <div class="ui-options ui-product-popup">
+            <h2 class="ui-dash-header">Purchase Options</h2>
+
+            <div class="ui-layout-choice mt-40">
+                <h3 class="ui-sub-title">Paper Type</h3>
+                <div class="row no-gutters justify-content-center align-items-center mb-3">
+                    <div class="col-xl-6">
+                        <div class="form-check d-flex flex-column align-items-center justify-content-center" id="paper-original"
+                            (click)="paperType='original'" [ngClass]="{'active': paperType==='original'}">
+                            <input type="hidden" value="horizontal" id="layout-checkbox1" name="">
+                            <div class="d-flex">
+                                <img src="assets/images/sp-icon1.png" class="align-self-center">
+                                <p class="ui-checkbox-label">Original</p>
+                            </div>
+                            <small class="d-block">Extra Thick (32pt, Uncoated)</small>
+                            <div class="ui-border-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="form-check d-flex flex-column align-items-center justify-content-center" id="paper-super"
+                            (click)="paperType='super'" [ngClass]="{'active': paperType==='super'}">
+                            <input type="hidden" value="vertical" id="layout-checkbox2" name="">
+                            <div class="d-flex">
+                                <img src="assets/images/sp-icon2.png" class="align-self-center">
+                                <p class="ui-checkbox-label">Super</p>
+                            </div>
+                            <small class="d-block">Extra Thick (32pt, Uncoated)</small>
+                            <div class="ui-border-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters justify-content-center align-items-center">
+                    <div class="col-xl-6">
+                        <div class="form-check active d-flex flex-column align-items-center justify-content-center" id="paper-luxe"
+                            (click)="paperType='luxe'" [ngClass]="{'active': paperType==='luxe'}">
+                            <input type="hidden" value="horizontal" id="layout-checkbox1" name="">
+                            <div class="d-flex">
+                                <img src="assets/images/sp-icon3.png" class="align-self-center">
+                                <p class="ui-checkbox-label">Luxe</p>
+                            </div>
+                            <small class="d-block">Extra Thick (32pt, Uncoated)</small>
+                            <div class="ui-border-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="form-check d-flex flex-column align-items-center justify-content-center" id="paper-cotton"
+                            (click)="paperType='cotton'" [ngClass]="{'active': paperType==='cotton'}">
+                            <input type="hidden" value="vertical" id="layout-checkbox2" name="">
+                            <div class="d-flex">
+                                <img src="assets/images/sp-icon4.png" class="align-self-center">
+                                <p class="ui-checkbox-label">Cotton</p>
+                            </div>
+                            <small class="d-block">Extra Thick (32pt, Uncoated)</small>
+                            <div class="ui-border-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-layout-choice mt-40" [hidden]="cardType=='post'">
+                <h3 class="ui-sub-title">Corners</h3>
+                <div class="row no-gutters justify-content-center align-items-center">
+                    <div class="col-xl-6" id="border-square">
+                        <div class="form-check d-flex align-items-center justify-content-center" id="border-square"
+                            (click)="borderStyle='square'" [ngClass]="{'active': borderStyle==='square'}">
+                            <img src="assets/images/sp-icon5.png">
+                            <p class="ui-checkbox-label" id="border-square">Square</p>
+                            <div class="ui-border-bottom" id="border-square"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="form-check d-flex align-items-center justify-content-center" id="border-round"
+                            (click)="borderStyle='round'" [ngClass]="{'active': borderStyle==='round'}">
+                            <img src="assets/images/sp-icon6.png">
+                            <p class="ui-checkbox-label">Rounded</p>
+                            <div class="ui-border-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui-layout-choice mt-40">
+                <h3 class="ui-sub-title">Finish</h3>
+                <div class="row no-gutters justify-content-center align-items-center">
+                    <div class="col-xl-6">
+                        <div class="form-check d-flex align-items-center justify-content-center"
+                            (click)="setMatteEffect()" [ngClass]="{'active': isMatted}">
+                            <input type="hidden" value="horizontal" id="layout-checkbox1" name="">
+                            <img src="assets/images/sp-icon7.png">
+                            <p class="ui-checkbox-label">Matte</p>
+                            <div class="ui-border-bottom"></div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6">
+                        <div class="form-check d-flex align-items-center justify-content-center"
+                            (click)="setGlossEffect()" [ngClass]="{'active': isGlossed}">
+                            <input type="hidden" value="vertical" id="layout-checkbox2" name="">
+                            <img src="assets/images/sp-icon8.png">
+                            <p class="ui-checkbox-label">Gloss</p>
+                            <div class="ui-border-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <label for="ui-quantity" class="mt-40 ui-sub-title">Quantity</label>
+            <select class="form-control" id="ui-quantity">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+        </div>
+
+    </div>
+    <div id="right-panel" class="review-product-section">
+
+        <div class="ui-main-body">
+            <div class="ui-title row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="ui-dash-header text-left">Final Review</h2>
+                </div>
+                <div class="col-md-6">
+                    <p class="text-right">Price: <span class="ui-strike-off">$20.00</span> &nbsp;<span class="ui-price">$9.99</span></p>
+                </div>
+            </div>
+
+            <div class="container ui-container">
+                <h4 class="mb-4 text-uppercase">Things to check for:</h4>
+                <div class="row text-left justify-content-center no-gutters">
+                    <div class="col-lg-6 mb-2">
+                        <i class="fa fa-chevron-right"></i> Information is accurate and spelled correctly
+                    </div>
+                    <div class="col-lg-6 mb-2">
+                        <i class="fa fa-chevron-right"></i> Images are clear and don’t appear blurry
+                    </div>
+                </div>
+                <div class="row text-left justify-content-center no-gutters">
+                    <div class="col-lg-6 mb-2">
+                        <i class="fa fa-chevron-right"></i> Text is legible and contrasts against background
+                    </div>
+                    <div class="col-lg-6 mb-2">
+                        <i class="fa fa-chevron-right"></i> Nothing is overlapping or too close to the margins
+                    </div>
+                </div>
+
+                <div class="ui-rotator text-left">
+                    <div class="ui-flip-card">
+                        <div class="ui-front" [ngClass]="{
+                            'original': paperType==='original',
+                            'super': paperType==='super',
+                            'cotton': paperType==='cotton',
+                            'luxe': paperType==='luxe'
+                        }">
+                            <canvas id="front-canvas" class="canvas"></canvas>                    
+                        </div>
+                        <div class="ui-back" [ngClass]="{
+                            'original': paperType==='original',
+                            'super': paperType==='super',
+                            'cotton': paperType==='cotton',
+                            'luxe': paperType==='luxe'
+                        }">
+                            <canvas id="back-canvas" class="canvas"></canvas>
+                        </div>
+                    </div>
+                    <input type="range" class="ui-ranger" min="0" max="180" step="1" value="0">
+                </div>
+            </div>
+        </div>
+        
+        <div class="ui-main-footer d-flex flex-nowrap align-items-center justify-content-end">
+            <div class="form-check mr-4">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" [ngModel]="isChecked"
+                        [ngClass]="{'active': validate == false}" (change)="checkedVaidate()">
+                    <span [ngClass]="{'active': validate== false}"> I have reviewed and approve my design... </span>
+                </label>
+            </div>
+            <button class="btn btn-dark-green" (click)="goToCartPage()">
+                Proceed to checkout <i class="fa fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+</div>

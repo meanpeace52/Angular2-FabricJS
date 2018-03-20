@@ -1,0 +1,2197 @@
+[
+    {
+        "id": 0,
+        "type": "business",
+        "template": {
+            "front": "/assets/images/temp/business1-front.jpg",
+            "back": "/assets/images/temp/business1-back.jpg"
+        },
+        "background": {
+            "horizontal": {
+                "front": "/assets/images/temp/business1-front-land.png",
+                "back": "/assets/images/temp/business1-back-land.png"
+            },
+            "vertical": {
+                "front": "/assets/images/temp/business1-front-portrait.png",
+                "back": "/assets/images/temp/business1-back-portrait.png"
+            }
+        },
+        "name": "Modern Beautify Business Card",
+        "sku": "BC-001",
+        "size": {
+            "horizontal": {
+                "large": {
+                    "width": 800,
+                    "height": 480
+                },
+                "medium": {
+                },
+                "small": {
+
+                }
+            },
+            "vertical": {
+                "large": {
+                    "width": 480,
+                    "height": 800
+                },
+                "medium": {
+
+                },
+                "small": {
+
+                }
+            }
+        },
+        "elements": [
+            {
+                "type": "image",
+                "src": "/assets/images/temp/logo.png",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 225,
+                            "top": 90,
+                            "width": 330,
+                            "height": 69
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 90,
+                            "top": 110,
+                            "width": 300,
+                            "height": 62
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "Each office is independently owned and operated",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 200,
+                            "top": 160,
+                            "fontSize": 20,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 70,
+                            "top": 175,
+                            "fontSize": 17,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "id": "businessAddress",
+                "content": "",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 420,
+                            "top": 230,
+                            "fontSize": 22,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 80,
+                            "top": 530,
+                            "fontSize": 22,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }   
+            },
+            {
+                "type": "text",
+                "id": "businessAddress",
+                "content": "",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 420,
+                            "top": 255,
+                            "fontSize": 22,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 80,
+                            "top": 555,
+                            "fontSize": 22,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }   
+            },
+            {
+                "type": "text",
+                "id": "cellPhone",
+                "content": "",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 420,
+                            "top": 300,
+                            "fontSize": 20,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 80,
+                            "top": 590,
+                            "fontSize": 20,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }   
+            },
+            {
+                "type": "text",
+                "id": "telePhone",
+                "content": "",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 420,
+                            "top": 320,
+                            "fontSize": 20,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 80,
+                            "top": 610,
+                            "fontSize": 20,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }   
+            },
+            {
+                "type": "text",
+                "id": "userName",
+                "content": "",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 80,
+                            "top": 250,
+                            "fontSize": 50,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 140,
+                            "top": 415,
+                            "fontSize": 40,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }   
+            },
+            {
+                "type": "text",
+                "id": "email",
+                "content": "",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 420,
+                            "top": 340,
+                            "fontSize": 20,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 80,
+                            "top": 630,
+                            "fontSize": 20,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }   
+            },
+            {
+                "type": "text",
+                "id": "website",
+                "content": "",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 420,
+                            "top": 360,
+                            "fontSize": 20,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 80,
+                            "top": 650,
+                            "fontSize": 20,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }   
+            },
+            {
+                "type": "text",
+                "content": "",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 100,
+                            "top": 310,
+                            "fontSize": 22,
+                            "fontColor": "#c50035",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 100,
+                            "top": 460,
+                            "fontSize": 22,
+                            "fontColor": "#c50035",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }   
+            },
+            {
+                "type": "image",
+                "id": "userImg",
+                "src": "/assets/images/userImg.png",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 38,
+                            "top": 34,
+                            "width": 280,
+                            "height": 406
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 58,
+                            "top": 59,
+                            "width": 364,
+                            "height": 479
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "image",
+                "src": "/assets/images/temp/logo.png",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 350,
+                            "top": 150,
+                            "width": 330,
+                            "height": 69
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 58,
+                            "top": 590,
+                            "width": 300,
+                            "height": 62
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "id": "userName",
+                "content": "John Smith",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 360,
+                            "top": 243,
+                            "fontSize": 44,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 80,
+                            "top": 675,
+                            "fontSize": 36,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }   
+            },
+            {
+                "type": "text",
+                "content": "Each office is independently owned and operated",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 350,
+                            "top": 310,
+                            "fontSize": 18,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 60,
+                            "top": 740,
+                            "fontSize": 16,
+                            "fontColor": "#4e4e4e",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }   
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "type": "post",
+        "template": {
+            "front": "/assets/images/temp/post1-front.png",
+            "back": "/assets/images/temp/post1-back.png"
+        },
+        "background": {
+            "horizontal": {
+                "front": "/assets/images/temp/post1-front-land.png",
+                "back": "/assets/images/temp/post1-back-land.png"
+            },
+            "vertical": {
+                "front": "/assets/images/temp/post1-front-portrait.png",
+                "back": "/assets/images/temp/post1-back-portrait.png"
+            }
+        },
+        "name": "Modern Beautify Post Card",
+        "sku": "PC-001",
+        "size": {
+            "horizontal": {
+                "large": {
+                    "width": 800,
+                    "height": 444
+                },
+                "medium": {
+                },
+                "small": {
+
+                }
+            },
+            "vertical": {
+                "large": {
+                    "width": 444,
+                    "height": 800
+                },
+                "medium": {
+
+                },
+                "small": {
+                    
+                }
+            }
+        },
+        "elements": [
+            {
+                "type": "image",
+                "src": "/assets/images/temp/logo.png",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 240,
+                            "top": 60,
+                            "width": 200,
+                            "height": 42
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 30,
+                            "top": 60,
+                            "width": 150,
+                            "height": 31
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "image",
+                "src": "/assets/images/temp/logo.png",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 520,
+                            "top": 30,
+                            "width": 200,
+                            "height": 42
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "width": "",
+                            "height": ""
+                            
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "image",
+                "src": "/assets/images/temp/house.png",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 250,
+                            "top": 140,
+                            "width": 490,
+                            "height": 256
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 33,
+                            "top": 120,
+                            "width": 380,
+                            "height": 315
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "image",
+                "src": "/assets/images/temp/house1.png",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 25,
+                            "top": 24,
+                            "width": 170,
+                            "height": 121
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 30,
+                            "top": 480,
+                            "width": 180,
+                            "height": 129
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "image",
+                "src": "/assets/images/temp/house2.png",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 25,
+                            "top": 160,
+                            "width": 170,
+                            "height": 121
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 230,
+                            "top": 480,
+                            "width": 180,
+                            "height": 129
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "image",
+                "src": "/assets/images/temp/house3.png",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 25,
+                            "top": 300,
+                            "width": 170,
+                            "height": 121
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 30,
+                            "top": 625,
+                            "width": 180,
+                            "height": 129
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "image",
+                "src": "/assets/images/temp/user.png",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 28,
+                            "top": 319,
+                            "width": 100,
+                            "height": 110
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 85,
+                            "top": 320,
+                            "width": 85,
+                            "height": 90
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "MODERN",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 475,
+                            "top": 55,
+                            "fontSize": 30,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayBold"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 209,
+                            "top": 47,
+                            "fontSize": 25,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayBold"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "MODERN",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayBold"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 30,
+                            "top": 60,
+                            "fontSize": 44,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayBold"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "BEAUTY",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                           "left": 620,
+                            "top": 55,
+                            "fontSize": 30,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 325,
+                            "top": 47,
+                            "fontSize": 25,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "BEAUTY",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#404040",
+                            "fontFamily": "RalewayRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 240,
+                            "top": 60,
+                            "fontSize": 44,
+                            "fontColor": "#404040",
+                            "fontFamily": "RalewayRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "1224 MONTANA AVE | SANTA MONICA",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 475,
+                            "top": 100,
+                            "fontSize": 14,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewaySemiBold"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 210,
+                            "top": 90,
+                            "fontSize": 12,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewaySemiBold"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "KITCHEN",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 115,
+                            "top": 35,
+                            "fontSize": 12,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 130,
+                            "top": 493,
+                            "fontSize": 12,
+                            "fontColor": "#ffffff",
+                            "bakcgroundColor": "#b8202d"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "FAMILY ROOM",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 105,
+                            "top": 171,
+                            "fontSize": 12,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 320,
+                            "top": 492,
+                            "fontSize": 12,
+                            "fontColor": "#ffffff",
+                             "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "BED ROOM",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 115,
+                            "top": 310,
+                            "fontSize": 12,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 128,
+                            "top": 636,
+                            "fontSize": 12,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "OFFERING AT $250,00",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 505,
+                            "top": 365,
+                            "fontSize": 21,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 230,
+                            "top": 400,
+                            "fontSize": 16,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "Bebas Neue"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "Keller Williams Santa Monica | BRE# 01499010 \nEach office is independently owned and operated",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 520,
+                            "top": 80,
+                            "fontSize": 12,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": "",
+                            "fontColor": "",
+                            "fontFamily": ""
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "OUR",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": "",
+                            "fontColor": "",
+                            "fontFamily": ""
+                            
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 230,
+                            "top": 630,
+                            "fontSize": 24,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayBold"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "OUR",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 30,
+                            "top": 73,
+                            "fontSize": 26,
+                            "fontColor": "#404040",
+                            "fontFamily": "RalewayRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#404040",
+                            "fontFamily": "RalewayRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "FACILITY",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                           "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayRegular" 
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 295,
+                            "top": 630,
+                            "fontSize": 26,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "FACILITY",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 95,
+                            "top": 73,
+                            "fontSize": 26,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "ABOUT",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 30,
+                            "top": 175,
+                            "fontSize": 26,
+                            "fontColor": "#404040",
+                            "fontFamily": "RalewayRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 60,
+                            "top": 150,
+                            "fontSize": 24,
+                            "fontColor": "#404040",
+                            "fontFamily": "RalewayBold"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "THE PROPERTY",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 130,
+                            "top": 175,
+                            "fontSize": 24,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 160,
+                            "top": 150,
+                            "fontSize": 24,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "RalewayRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod \ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim \nveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea \ncommodo consequat. Duis aute irure dolor in reprehenderit in voluptate \nvelit esse cillum dolore eu fugiat nulla.",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 30,
+                            "top": 210,
+                            "fontSize": 12,
+                            "fontColor": "#b8202d",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 40,
+                            "top": 190,
+                            "fontSize": 12,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "4 Bed Rooms",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                            
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 230,
+                            "top": 670,
+                            "fontSize": 14,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "4 Bed Rooms",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 33,
+                            "top": 108,
+                            "fontSize": 16,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"                            
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "Dining Room",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"                         
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 330,
+                            "top": 670,
+                            "fontSize": 14,
+                            "fontColor": "#474647"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "Dining Room",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 150,
+                            "top": 108,
+                            "fontSize": 16,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"                       
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "Kitchen Room",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                                                
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 230,
+                            "top": 690,
+                            "fontSize": 14,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "Kitchen Room",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 270,
+                            "top": 108,
+                            "fontSize": 16,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"                 
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "Living Room",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"            
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 330,
+                            "top": 690,
+                            "fontSize": 14,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "Living Room",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {   
+                            "left": 33,
+                            "top": 130,
+                            "fontSize": 16,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"            
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "1 Bath Room",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": { 
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"        
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 230,
+                            "top": 710,
+                            "fontSize": 14,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "1 Bath Room",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {  
+                            "left": 150,
+                            "top": 130,
+                            "fontSize": 16,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"       
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "Swiming Pool",
+                "direction": "front",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"    
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 330,
+                            "top": 710,
+                            "fontSize": 14,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "Swiming Pool",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 270,
+                            "top": 130,
+                            "fontSize": 16,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"  
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": "",
+                            "top": "",
+                            "fontSize": 0,
+                            "fontColor": "#474647",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "(301) 555-0100",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 145,
+                            "top": 370,
+                            "fontSize": 12,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular" 
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 180,
+                            "top": 360,
+                            "fontSize": 10,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "077 5005 3489",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 145,
+                            "top": 390,
+                            "fontSize": 12,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 180,
+                            "top": 375,
+                            "fontSize": 10,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "JHON SMITH",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 145,
+                            "top": 317,
+                            "fontSize": 20,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaBold"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 180,
+                            "top": 320,
+                            "fontSize": 16,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaBold"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "emmanuel@email.com",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 260,
+                            "top": 370,
+                            "fontSize": 12,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 270,
+                            "top": 360,
+                            "fontSize": 10,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "www.realestate.com",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 260,
+                            "top": 390,
+                            "fontSize": 12,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 270,
+                            "top": 375,
+                            "fontSize": 10,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "REALTOR | BRE# 01998060",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 145,
+                            "top": 340,
+                            "fontSize": 16,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 180,
+                            "top": 340,
+                            "fontSize": 12,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            },
+            {
+                "type": "text",
+                "content": "Keller Williams Realtor BRE# 01",
+                "direction": "back",
+                "data": {
+                    "horizontal": {
+                        "large": {
+                            "left": 145,
+                            "top": 415,
+                            "fontSize": 12,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    },
+                    "vertical": {
+                        "large": {
+                            "left": 180,
+                            "top": 395,
+                            "fontSize": 10,
+                            "fontColor": "#ffffff",
+                            "fontFamily": "ProximaNovaRegular"
+                        },
+                        "medium": {
+
+                        },
+                        "small": {
+
+                        }
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,88 @@
+<div class="modal-dialog custom-modal">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h4 class="modal-title"></h4>
+			<button type="button" class="close" (click)="close()" >&times;</button>
+		</div>
+		<div class="modal-body">
+			<div class="product">
+				<img [src]="originalImage" class="img-fluid">
+				<div> 
+					<h4>{{cardType}} cards</h4>
+	            	<p>50 Postcards from $49.99</p>
+	            </div>
+			</div>
+			
+            <div class="layout-panel">
+	    		<div class="ui-layout-choice">
+                    <h4>Choose Layout</h4>
+                    <div class="row no-gutters">
+                        <div class="col-md-6 choice">
+                            <div class="form-check d-flex align-items-center justify-content-center" id="layout-checkbox1" 
+                            	(click)="setLayoutPanel('horizontal')" [ngClass]="{'active': layoutPanel==='horizontal'}">
+                                <div class="ui-h-box">
+                                	<i class="fa fa-window-maximize"></i>
+                                </div>
+                                <p class="ui-checkbox-label">Horizontal</p>
+                                <div class="ui-border-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 choice">
+                            <div class="form-check d-flex align-items-center justify-content-center" id="layout-checkbox2"
+                            	(click)="setLayoutPanel('vertical')" [ngClass]="{'active': layoutPanel==='vertical'}">
+                                <div class="ui-v-box">
+                                	<i class="fa fa-window-maximize vertical-window"></i>
+                                </div>
+                                <p class="ui-checkbox-label">Vertical</p>
+                                <div class="ui-border-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="ui-layout-choice" [hidden]="cardType == 'business'">
+                    <h4>Choose Size</h4>
+
+                    <div class="row no-gutters">
+                        <div class="col-md-4 choice">
+                            <div class="form-check d-flex align-items-center justify-content-center" id="size-checkbox1"
+                            	(click)="setSizePanel('small')" [ngClass]="{'active': sizePanel==='small'}">
+                                <div class="ui-s-box">
+                                	<i class="fa fa-square-o fa-lg"></i>
+                                </div>
+                                <p class="ui-checkbox-label">Small <br/> 6" x 4"</p>
+                                <div class="ui-border-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 choice">
+                            <div class="form-check d-flex align-items-center justify-content-center" id="size-checkbox2"
+                            	(click)="setSizePanel('medium')" [ngClass]="{'active': sizePanel==='medium'}">
+                                <div class="ui-m-box">
+                                	<i class="fa fa-square-o fa-2x"></i>
+                                </div>
+                                <p class="ui-checkbox-label">Medium <br/> 6" x 4
+                                <div class="ui-border-bottom"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 choice">
+                            <div class="form-check d-flex align-items-center justify-content-center" id="size-checkbox3"
+                            	(click)="setSizePanel('large')" [ngClass]="{'active': sizePanel==='large'}">
+                                <div class="ui-l-box">
+                                	<i class="fa fa-square-o fa-3x"></i>
+                                </div>
+                                <p class="ui-checkbox-label">Large <br/> 6" x 4"</p>
+                                <div class="ui-border-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+	    	</div>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-success" (click)="confirm()">Proceed</button>
+			<div class="btn-cancel" (click)="cancel()">Cancel</div>
+		</div>
+	</div>
+</div>

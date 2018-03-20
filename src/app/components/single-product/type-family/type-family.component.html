@@ -1,0 +1,14 @@
+<div id="print-builder" class="row no-gutters">
+    <div id="left-panel" class="ui-bg-light-grey" [ngClass]="isCollapse ? 'collapsed': 'expanded'">
+    	<nav class="nav nav-pills nav-justified ui-right-title flex-lg-nowrap">
+    		<a class="nav-item nav-link" (click)="leftPanel='designs'" [ngClass]="{'active': leftPanel==='designs'}"><i class="fa fa-paint-brush"></i>Designs</a>
+    		<a class="nav-item nav-link" (click)="leftPanel='edit'" [ngClass]="{'active': leftPanel==='edit'}"><i class="fa fa-edit"></i>Edit</a>
+    		<a class="nav-item nav-link" (click)="leftPanel='layouts'" [ngClass]="{'active': leftPanel==='layouts'}"><i class="fa fa-object-group"></i>Layouts</a>
+    	</nav>    	    	
+    </div>
+    <div id="right-panel">
+    	<div class="ui-main-body">
+    		<h3>Family Page</h3>
+    	</div>
+    </div>
+</div>

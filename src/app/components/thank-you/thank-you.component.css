@@ -1,0 +1,14 @@
+.ui-item .img-fluid{
+	width: 195px;
+    height: 110px;
+    margin-right: 2px;
+    margin-bottom: 10px;
+}
+.ui-item .ui-item-desc {
+	width: 100%;
+}
+
+.ui-thank-you-main .ui-item .d-flex i {
+	padding: 10px;
+    border: 1px solid #444444;
+}
