@@ -1,0 +1,199 @@
+@import 'components/side-navbar.css';
+@import 'components/top-bar.css';
+@import 'components/dashboard.css';
+@import 'components/products-viewer.css';
+@import 'components/thank-you.css';
+@import 'components/single-product.css';
+@import './font.css';
+
+
+
+body, html {
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    height: 100%;
+    width: 100%;
+    letter-spacing: 0.05em;
+}
+
+button:focus {
+    outline: none;
+}
+
+* {
+    outline: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.ui-no-y-scroll {
+    overflow-y: hidden;
+}
+
+.ui-y-scroll {
+    overflow-y: scroll;
+}
+
+.ui-btn-black {
+    background-color: #444444;
+    color: #ffffff;
+    padding: 6px 30px;
+    border-radius: 0;
+    text-transform: uppercase;
+    max-width: 120px;
+}
+
+.ui-btn-black-lg {
+    background-color: #444444;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 0;
+    text-transform: uppercase;
+    max-width: 400px;
+}
+
+.ui-text-green {
+    color: #4e961a;
+}
+
+.ui-btn-black:hover, .ui-btn-black-lg:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.ui-btn-black-outline {
+    max-width: 150px;
+    border-radius: 0;
+    background-color: transparent;
+    border-color: #444444;
+    color: #444444;
+    padding: 6px 30px;
+    text-transform: uppercase;
+}
+
+.ui-btn-black-outline:hover {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+
+.btn-green {
+    color: #ffffff !important;
+    background-color: #4e9619;
+    border-color: #4e9619;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 12px 50px;
+    max-width: 400px;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.btn-green:hover {
+    background-color: #336d04;
+    border-color: #336d04;
+    color: #ffffff;
+}
+
+.btn-blue {
+    color: #ffffff !important;
+    background-color: #32c3ff;
+    border-color: #32c3ff;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 12px 50px;
+    max-width: 400px;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.btn-blue:hover {
+    background-color: #09A3E3;
+    border-color: #09A3E3;
+    color: #ffffff;
+}
+.btn-dark-green {
+    color: #ffffff;
+    background-color: #298b30;
+    border-color: #298b30;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 1.667em 2.778em;
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.btn-dark-green:hover {
+    background-color: #016508;
+    border-color: #016508;
+    color: #ffffff;
+}
+
+.btn-ouline-blue {
+    color: #193d55;
+    background: transparent none;
+    border-color: #193d55;
+    border-radius: 0;
+    text-transform: uppercase;
+    padding: 12px 100px;
+    max-width: 300px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.btn-ouline-blue:hover {
+    color: #ffffff;
+    background-color: #193d55;
+    border-color: #193d55;
+}
+
+.ui-heading {
+    color: #1a3e56;
+    font-weight: 300;
+    font-size: 2.866em;
+    text-transform: uppercase;
+    border-top: 1px solid #9da8ae;
+    border-bottom: 1px solid #9da8ae;
+    text-align: center;
+    padding: 18px 0;
+    display: inline-block;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.pre-print-builder {
+    display: none !important;
+    position: absolute;
+    height: 0;
+    max-width: 0 !important;
+}
+
+.form-group input, .form-group select {
+    border-radius: 0 !important;
+}
+
+.form-control {
+    border-radius: 0 !important;    
+}
+
+.modal-content {
+    border-radius: 0;    
+}
+
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,34 @@
+.ui-product-hero {
+    padding-left: 5em;
+    min-height: 400px;
+    background: url("/assets/images/product-hero.png") no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ui-product-hero .ui-hero-title {
+    font-size: 2.444em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.ui-product-hero .ui-text {
+    margin-bottom: 40px;
+    width: 70%;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .ui-product-hero {
+        padding: 20px;
+    }
+}
+
+/* humayun styling */
+.borderRight{
+    border-right: 1px solid #eee;
+}
+.informationHere{
+    margin-top: 40px;
+}

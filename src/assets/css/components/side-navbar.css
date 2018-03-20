@@ -1,0 +1,283 @@
+.ui {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+app-side-navbar {
+    width: 170px;
+    float: left;
+    margin-left: -170px;
+    color: rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    -webkit-transition: all .3s;
+    position: relative;
+    z-index: 999;
+    background: #124b7a; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#124b7a,#118ac5); /*Safari 5.1-6*/
+    background: -o-linear-gradient(#124b7a,#118ac5); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(#124b7a,#118ac5); /*Fx 3.6-15*/
+    background: linear-gradient(#124b7a,#118ac5); /*Standard*/
+    transition: all .3s ease;
+}
+
+app-side-navbar::before {
+/*    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: inherit;
+    background-color: inherit;
+    border: inherit;
+    z-index: -1;*/
+}
+
+.logo {
+    padding: 40px 30px;
+}
+
+.nav-menu ul li {
+    width: 100%;
+}
+
+.nav-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.nav-menu ul li a {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 40px 10px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    border-top:1px solid #0d3658;
+    position: relative;
+}
+.nav-menu ul li a:before{
+    content: '';
+    position: absolute;
+    left:0px;
+    top:0px;
+    width:100%;
+    height: 1px;
+    background:rgba(255,255,255,.2);
+}
+.nav-menu ul li a i{
+    font-size:1.5em;
+    margin-right: 5px;
+}
+
+.nav-menu ul li a:hover {
+    color: #ffffff;
+    border-bottom-color: transparent;
+}
+
+.nav-menu .ui-nl1:after,
+.nav-menu .ui-nl2:after,
+.nav-menu .ui-nl3:after,
+.nav-menu .ui-nl4:after,
+.nav-menu .ui-nl5:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    -webkit-transform: scaleX(0.0001);
+    -ms-transform: scaleX(0.0001);
+    transform: scaleX(0.0001);
+    background: transparent;
+    -webkit-transition: -webkit-transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out, background-color .25s ease;
+}
+
+.nav-menu .ui-nl1:hover:after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    background: #ffffff;
+}
+
+.nav-menu .ui-nl2:hover:after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    background: #f2d656;
+}
+
+
+.nav-menu .ui-nl3:hover:after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    background: #32c2fe;
+}
+
+.nav-menu .ui-nl4:hover:after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    background: #d51744;
+}
+
+.nav-menu .ui-nl5:hover:after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    background: #4e961a;
+}
+
+.nav-menu .ui-nl2:hover .fa-address-book-o {
+    color: #f2d656;
+}
+
+
+.nav-menu .ui-nl3:hover .fa-calendar {
+    color: #32c2fe;
+}
+
+
+.nav-menu .ui-nl4:hover .fa-envelope-open {
+    color: #d51744;
+}
+
+
+.nav-menu .ui-nl5:hover .fa-credit-card {
+    color: #4e961a;
+}
+
+.nav-menu ul li.active a {
+    color: #ffffff;
+    border-bottom: none;
+}
+
+.nav-menu ul li.active .ui-nl1:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    background: #ffffff;
+}
+
+.nav-menu ul li.active .ui-nl2:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    background: #f2d656;
+}
+
+.nav-menu ul li.active .ui-nl3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    background: #32c2fe;
+}
+
+
+.nav-menu ul li.active .ui-nl4:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    background: #d51744;
+}
+
+.nav-menu ul li.active .ui-nl5:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+    background: #4e961a;
+}
+.nav-menu ul li.active .ui-nl2 i {
+    color: #f2d656;
+}
+
+.nav-menu ul li.active .ui-nl3 i {
+    color: #32c2fe;
+}
+
+.nav-menu ul li.active .ui-nl4 i {
+    color: #d51744;
+}
+
+.nav-menu ul li.active .ui-nl5 i {
+    color: #4e961a;
+}
+
+
+.ui-expand app-side-navbar {
+    width: 170px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    margin-left: 0px;
+}
+
+.ui-expand .nav-menu ul li a {
+    padding: 40px 10px;;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+}
+
+.ui-expand .nav-menu ul li a i {
+    margin: 0px;
+}
+
+.ui-expand .main-content {
+    width: auto;
+    position: relative;
+    -webkit-transition: all .299s;
+    transition: all .299s;
+}
+
+@media screen and (max-width: 1024px) {
+    .logo {
+        padding: 40px 30px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    app-side-navbar {
+        margin-left: 0;
+        min-height: 100vh;
+    }
+
+    .main-content {
+        width: auto;
+        -webkit-transition: all .299s;
+        transition: all .299s;
+    }
+}

@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('../fonts/Fonts/ProximaNova-Bold.otf') format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('../fonts/Fonts/ProximaNova-Light.otf') format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RalewayBold';
+    src: url('../fonts/Fonts/Raleway-Bold_0.ttf') format("opentype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RalewaySemiBold';
+    src: url('../fonts/Fonts/Raleway-SemiBold_0.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RalewayRegular';
+    src: url('../fonts/Fonts/Raleway-Light_0.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.preloadFont {
+    opacity:0;
+    height:0;
+    width:0;
+    display:inline-block;
+}
+
+#ProximaNovaBold {
+    font-family: ProximaNovaBold;
+}
+
+#ProximaNovaRegular {
+    font-family: ProximaNovaRegular;
+}
+
+#RalewayBold {
+    font-family: RalewayBold;
+}
+
+#RalewaySemiBold {
+    font-family: RalewaySemiBold;
+}
+
+#RalewayRegular {
+    font-family: RalewayRegular;
+}

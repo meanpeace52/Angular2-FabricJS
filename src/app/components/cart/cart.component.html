@@ -1,0 +1,162 @@
+<div class="ui-thank-you-main ui-sc-ty text-center h-100 w-100">
+    <h1 class="ui-heading">Shopping cart</h1>
+
+    <div class="row text-left">
+        <div class="col-lg-6 mh650 ui-content-box">
+            <div class=" h-100">
+                <h2 class="ui-title">Your cart</h2> 
+                <div class="ui-item d-flex flex-wrap">
+                    <div class="product-image">
+                        <img [src]="frontImage" class="img-responsive" />
+                        <img [src]="backIamge" class="img-responsive" />
+                    </div>
+                    <div class="ui-item-desc ml-3 mt-1">
+                        <div class="w-100 d-flex">
+                            <p class="ui-text font-weight-bold">{{label}}</p>
+                            <p class="ui-title w-100 text-right mb-0">${{price.toFixed(2)}}</p>
+                        </div>
+                        <p class="ui-text font-weight-bold">Qty: <span>{{qty}}</span></p>
+                        <div class="d-flex flex-wrap">
+                            <a href="" class="btn ui-btn-black mr-2">View</a>
+                            <a routerLink="/single-product" class="btn ui-btn-white mr-2">Edit</a>
+                            <div class="share-btn">
+                                <i class="fa fa-share-alt mr-2" aria-hidden="true"></i>
+                                <i class="fa fa-download mr-2" aria-hidden="true"></i>
+                                <i class="fa fa-print mr-2" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui-item">
+                    <label for="label" class="ui-text">Add a Label</label>
+                    <div class="add-label-section">
+                        <input type="text" id="label" class="form-control ui-text" placeholder="ie. business cards, flyers, 123 Main St." [(ngModel)]="label">
+                        <button type="button" class="btn btn-black" (click)="changeLabel()">save</button>
+                    </div>
+                </div>
+                <div class="ui-line-break"></div>
+                <div class="continue-shopping">
+                    <a href="products" class="btn btn-continue-shopping">continue shopping</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 mh650">
+            <div class="ui-content-box h-100">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12 payment" *ngIf="!editAddress">
+                        <h2 class="ui-title mb-2">Delivery</h2>
+                        <h2 class="ui-title text-capitalize mb-1">John Smith</h2>
+                        <div class="ui-tex">123 Street Name </div>
+                        <div class="ui-text">Something Else, CA 90210</div>
+                        <button class="btn ui-btn-white" type="button" (click)="editAddress = true">Edit</button>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 payment" *ngIf="editAddress">
+                        <h2 class="ui-title mb-2">Delivery</h2>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" value="John Smith" class="form-control">
+                        <label for="address1">Address1</label>
+                        <input type="text" name="address1" id="address1" value="123 Street Name" class="form-control">
+                        <label for="address1">Address2</label>
+                        <input type="text" name="address2" id="address2" value="Something Else, CA 90210" class="form-control">
+                        <div class="edit-btn">
+                            <button class="btn btn-success" type="button" (click)="editAddress = false">Save</button>
+                            <button class="btn btn-primary" type="button" (click)="editAddress = false">Cancel</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 payment" *ngIf="!editPayment">
+                        <h2 class="ui-title">Payment</h2>                        
+                        <div class="form-group">
+                            <div class="ui-text"> Credit Card Type</div>
+                            <h5>Master Card</h5>
+                        </div>
+                        <div class="form-group">
+                            <div class="ui-text">Mastercard Ending </div>
+                            <h5> **** **** **** 5602</h5>
+                        </div>
+                        <div class="form-group">
+                            <div class="ui-text"> Zip/Postal Code</div>
+                            <h5>90017</h5>
+                        </div>
+                        <div class="form-group">
+                            <div class="ui-text">Expiration Date</div>
+                            <h5>11-18</h5>
+                        </div>
+                        <button class="btn ui-btn-white" (click)="editPayment = true">Edit</button>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12 payment" *ngIf="editPayment">
+                        <h2 class="ui-title">Payment</h2>                        
+                        <div class="form-group">
+                            <div class="ui-text">Credit Card Type</div>
+                            <select class="form-control">
+                                <option>Master Card</option>
+                                <option>Vida Card</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="ui-text">Mastercard Ending </div>
+                            <input type="text" value="**** **** **** 5602" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <div class="ui-text">Zip/Postal Code </div>
+                            <input type="text" value="90017" class="form-control">
+                        </div>                        
+                        <div class="form-group">
+                            <div class="ui-text">Expiration Date</div>
+                            <div class="expiration-date">
+                                <select class="form-control month">
+                                    <option>1</option>
+                                    <option>2</option>
+                                </select>
+                                 <select class="form-control day">
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select>
+                            </div>                            
+                        </div>
+                        <div class="edit-btn">
+                            <button class="btn btn-success" (click)="editPayment = false">Save</button>
+                            <button class="btn btn-primary" (click)="editPayment = false">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui-total mt-sm-5 mt-5">
+                    <h2 class="ui-title mb-1">Order total</h2>
+                    <div class="order-total">
+                        <div class="item">
+                            <div class="ui-text">Sub Total</div>
+                            <div class="ui-text">{{price.toFixed(2)}}</div>
+                        </div>
+                        <div class="item">
+                            <div class="ui-text">Shipping</div>
+                            <div class="ui-text">0.00</div>
+                        </div>
+                        <div class="promo-code">
+                            <input type="text" name="" placeholder="Enter Promo Code Here" class="form-control">
+                            <button class="btn btn-black">Apply</button>
+                        </div>
+                        <div class="item">
+                            <div class="ui-text">Discount(Promo Code)</div>
+                            <div class="ui-text">0.00</div>
+                        </div>
+                        <div class="item">
+                            <div class="ui-text dicount">18% discount mortgage branding discount</div>
+                            <div class="ui-text dicount">0.00</div>
+                        </div>
+                        <div class="ui-line-break"></div>
+                        <div class="item">
+                            <div class="ui-text ">Total</div>
+                            <div class="ui-text total">${{price.toFixed(2)}}</div>
+                        </div>
+                    </div>
+                    <div class="buy-now">
+                        <a class="btn btn-success btn-buy-now" (click)="order()">Buy Now</a>
+                        <img src="assets/images/norton.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="overlay-modal" *ngIf="showAlert"></div>

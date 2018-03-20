@@ -1,0 +1,44 @@
+.accountInformation{
+    padding: 60px 80px;
+    padding-bottom: 0;
+}
+.information{
+    padding-bottom: 30px;
+}
+.accountInformation h3{
+    margin-bottom: 50px;
+    padding: 10px 0;
+    border-top: 1px solid #9ea9ae;
+    border-bottom: 1px solid #9ea9ae;
+    width: 75%;
+}
+.singleInfo{
+    margin-bottom: 15px;
+}
+.singleInfo p{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.singleInfo h4{
+    font-size: 16px;
+    font-weight: 700;
+    height: 28px;
+}
+.singleInfo .btn{
+    width: 100%;
+    margin-top: 15px;
+}
+.singleInfo .form-group{
+    margin-bottom: 0;
+}
+@media (min-width:320px) and (max-width:567px) {
+    .accountInformation{
+        padding: 20px 30px;
+    }
+    .accountInformation h3{
+        width: 100%;
+    }
+    .information{
+        border-bottom: 1px solid #eee;
+    }
+}

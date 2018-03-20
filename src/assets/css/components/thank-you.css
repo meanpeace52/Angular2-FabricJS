@@ -1,0 +1,77 @@
+.ui-thank-you-main {
+    background: url(../../images/dash-thank-you.png) no-repeat;
+    background-size: cover;
+    padding: 0 20px 20%;
+}
+
+.ui-sc-ty .ui-heading {
+    margin: 40px 0;
+}
+
+.ui-sc-ty .ui-content-box {
+    -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255,255,255, 0.7);
+    padding: 40px 30px 60px;
+}
+
+.ui-sc-ty .ui-content-box .ui-promo {
+    border-radius: 0;
+}
+
+.ui-sc-ty .ui-title {
+    font-size: 1.333em;
+    text-transform: uppercase;
+    color: #193e55;
+    margin-bottom: 25px;
+}
+
+.ui-sc-ty .ui-text {
+    color: #444444;
+}
+
+.ui-sc-ty .ui-content-box a.ui-link {
+    color: #27b3ed;
+    text-decoration: underline;
+}
+
+.ui-sc-ty .ui-content-box .ui-line-break {
+    height: 1px;
+    margin: 20px 0 0;
+    width: 100%;
+    background-color: #bababa;
+}
+
+.ui-sc-ty .mh650 {
+    min-height: 650px;
+}
+
+.ui-bordered-tr {
+    border-top: 1px solid #ababab;
+}
+
+.ui-sc-ty .ui-item {
+    margin-top: 40px;
+}
+
+.ui-sc-ty .ui-item .ui-item-desc .ui-text {
+    line-height: 1;
+}
+
+.ui-sc-ty .ui-total {
+    margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+
+    .ui-sc-ty .mh650 {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .ui-sc-ty .ui-item {
+        flex-wrap: nowrap !important;
+    }
+}

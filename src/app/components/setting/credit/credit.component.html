@@ -1,0 +1,94 @@
+<div class="accountInformation">
+    <h3 class="text-uppercase">Credit card</h3>
+    <div class="cards">
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4 col-xs-6 singleCard">
+          <img src="../../../assets/images/visa-card.png" class="img-responsive">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2 col-xs-4 singleCard">
+          <img src="../../../assets/images/disc.png" class="img-responsive">
+        </div>
+      </div>
+    </div>
+    <div class="information" *ngIf="!edit">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <p>Credit Card Type</p>
+          <h4>{{credit.card}}</h4>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <p>Zip/Postal Code</p>
+          <h4>{{credit.zip}}</h4>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <p>Expiration Date</p>
+          <h4>{{credit.month}}-{{credit.year}}</h4>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <p>Security Code/CVV</p>
+          <h4>{{credit.code}}</h4>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <a class="btn btn-green text-uppercase" (click)="edit = true">Edit</a>
+        </div>
+      </div>
+    </div>
+    <div class="information" *ngIf="edit">
+      <form #f="ngForm" (ngSubmit)="save(f.value)">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 singleInfo">
+            <div class="form-group">
+              <label for="card">Credit Card Type</label>
+              <select class="form-control" ngModel [(ngModel)]="credit.card" id="card" name="card">
+                <option>Master Card</option>
+                <option>Master Card</option>
+                <option>Master Card</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 singleInfo">
+            <div class="form-group">
+              <label for="zip">Zip/Postal Code</label>
+              <input type="text" ngModel class="form-control" [(ngModel)]="credit.zip" id="zip" name="zip">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 singleInfo">
+            <div class="form-group">
+              <label>Expiration Date</label>
+              <div class="row">
+                <div class="col-md-6">
+                  <select class="form-control" ngModel [(ngModel)]="credit.month" id="month" name="month">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <select class="form-control" ngModel [(ngModel)]="credit.year" id="year" name="year">
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 singleInfo">
+            <div class="form-group">
+              <label for="code">Security Code/CVV</label>
+              <input type="text" ngModel class="form-control" [(ngModel)]="credit.code" id="code" name="code">
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 singleInfo">
+            <button class="btn btn-green text-uppercase" type="submit">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>

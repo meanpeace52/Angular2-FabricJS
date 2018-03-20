@@ -1,0 +1,229 @@
+<div class="accountInformation">
+  <h3 class="text-uppercase">Account Information</h3>
+  <div class="userImage" *ngIf="!edit">
+    <img [src]=user.photo class="img-responsive" *ngIf="!preview">
+    <div class="preview" *ngIf="preview">
+      <img src="{{url}}">
+    </div>
+    <i class="fa fa-camera"></i>
+  </div>
+  <div class="information" *ngIf="!edit">
+    <div class="row">
+      <div class="col-sm-6 col-md-6 singleInfo">
+        <p>FirstName</p>
+        <h4>{{accountInformation.firstName}}</h4>
+      </div>
+      <div class="col-sm-6 col-md-6 singleInfo">
+        <p>LastName</p>
+        <h4>{{accountInformation.lastName}}</h4>
+      </div>
+      <div class="col-sm-6 col-md-6 singleInfo">
+        <p>Email Address</p>
+        <h4>{{accountInformation.email}}</h4>
+      </div>
+      <div class="col-sm-6 col-md-6 singleInfo">
+        <p>Cellphone Number</p>
+        <h4>{{accountInformation.cellPhone}}</h4>
+      </div>
+      <div class="col-sm-6 col-md-6 singleInfo">
+        <p>Office Telephone Number</p>
+        <h4>{{accountInformation.telePhone}}</h4>
+      </div>
+      <div class="col-sm-6 col-md-6 singleInfo">
+        <p>BRE Number</p>
+        <h4>{{accountInformation.breNumber}}</h4>
+      </div>
+      <div class="col-sm-6 col-md-6 singleInfo">
+        <p>Fax</p>
+        <h4>{{accountInformation.fax}}</h4>
+      </div>
+      <div class="col-sm-6 col-md-6 singleInfo">
+        <p>Website</p>
+        <h4>{{accountInformation.website}}</h4>
+      </div>
+      <div class="col-sm-6 col-md-6 singleInfo">
+        <a class="btn btn-green text-uppercase" (click)="edit = true">Edit</a>
+      </div>
+      <div class="col-sm-6 col-md-6 singleInfo">
+        <a class="btn btn-blue text-uppercase" data-toggle="modal" data-target="#addUser">Add user</a>
+      </div>
+    </div>
+  </div>
+  <div class="information" *ngIf="edit">
+    <form #f="ngForm" (ngSubmit)="save(f.value)">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 noPadding">
+          <div class="userImage editImg">
+            <div class="form-group">
+              <input type="file" class="input-file" id="imgPlace" (change)="readUrl($event)" data-default-file="../../../assets/images/userImg.png">
+              <label for="imgPlace">
+                <img src="../../../assets/images/userImg.png" class="img-responsive" *ngIf="!preview">
+                <div class="preview" *ngIf="preview">
+                  <img src="{{url}}">
+                </div>
+                <i class="fa fa-camera"></i>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" ngModel [(ngModel)]="accountInformation.firstName" class="form-control" id="firstName" name="firstName">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" ngModel class="form-control" [(ngModel)]="accountInformation.lastName" id="lastName" name="lastName">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="text" ngModel class="form-control" [(ngModel)]="accountInformation.email" id="email" name="email">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <div class="form-group">
+            <label for="cellPhone">Cellphone Number</label>
+            <input type="text" ngModel class="form-control" [(ngModel)]="accountInformation.cellPhone" id="cellPhone" name="cellPhone">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <div class="form-group">
+            <label for="telePhone">Office Telephone Number</label>
+            <input type="text" ngModel class="form-control" [(ngModel)]="accountInformation.telePhone" id="telePhone" name="telePhone">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <div class="form-group">
+            <label for="breNumber">BRE Number</label>
+            <input type="text" ngModel [(ngModel)]="accountInformation.breNumber" class="form-control" id="breNumber" name="breNumber">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <div class="form-group">
+            <label for="fax">FAX</label>
+            <input type="text" ngModel [(ngModel)]="accountInformation.fax" class="form-control" id="fax" name="fax">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <div class="form-group">
+            <label for="website">Website</label>
+            <input type="text" ngModel [(ngModel)]="accountInformation.website" class="form-control" id="website" name="website">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" ngModel class="form-control" id="password" name="password">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" ngModel class="form-control" id="confirmPassword" name="confirmPassword">
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-6 singleInfo">
+          <button class="btn btn-green text-uppercase" type="submit">Save</button>
+        </div>
+      </div>
+    </form>
+  </div>
+    <!-- Modal -->
+  <div class="modal fade" id="addUser" tabindex="-1" role="dialog" aria-labelledby="addUserLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h3 class="text-uppercase">Add user</h3>
+          <div class="userImage">
+            <input type="file" class="input-file" id="imgPlace" (change)="readUrl($event)" data-default-file="../../../assets/images/userImg.png">
+            <label for="imgPlace">
+              <div class="imgPlaceHolder" *ngIf="!preview"></div>
+              <div class="preview" *ngIf="preview">
+                <img src="{{url}}">
+              </div>
+              <i class="fa fa-camera"></i>
+            </label>
+          </div>
+          <div class="information">
+            <form #f="ngForm" (ngSubmit)="save(f.value)">
+              <div class="row">
+                <div class="col-sm-6 col-md-6 singleInfo">
+                  <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" ngModel class="form-control" id="firstName" name="firstName">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 singleInfo">
+                  <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" ngModel class="form-control" id="lastName" name="lastName">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 singleInfo">
+                  <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="text" ngModel class="form-control" id="email" name="email">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 singleInfo">
+                  <div class="form-group">
+                    <label for="cellPhone">Cellphone Number</label>
+                    <input type="text" ngModel class="form-control" id="cellPhone" name="cellPhone">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 singleInfo">
+                  <div class="form-group">
+                    <label for="telePhone">Office Telephone Number</label>
+                    <input type="text" ngModel class="form-control" id="telePhone" name="telePhone">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 singleInfo">
+                  <div class="form-group">
+                    <label for="breNumber">BRE Number</label>
+                    <input type="text" ngModel class="form-control" id="breNumber" name="breNumber">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 singleInfo">
+                  <div class="form-group">
+                    <label for="fax">FAX</label>
+                    <input type="text" ngModel class="form-control" id="fax" name="fax">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 singleInfo">
+                  <div class="form-group">
+                    <label for="website">Website</label>
+                    <input type="text" ngModel class="form-control" id="website" name="website">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 singleInfo">
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" ngModel class="form-control" id="password" name="password">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 singleInfo">
+                  <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" ngModel class="form-control" id="confirmPassword" name="confirmPassword">
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 singleInfo">
+                  <button class="btn btn-green text-uppercase" type="submit" data-dismiss="modal">Save</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

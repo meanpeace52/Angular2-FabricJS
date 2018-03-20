@@ -1,0 +1,68 @@
+.accountInformation{
+    padding: 60px 80px;
+    padding-bottom: 0;
+}
+.information{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+.accountInformation h3{
+    margin-bottom: 50px;
+    padding: 10px 0;
+    border-top: 1px solid #9ea9ae;
+    border-bottom: 1px solid #9ea9ae;
+    width: 42%;
+}
+.cards{
+    margin-bottom: 15px;
+}
+.singleInfo{
+    margin-bottom: 15px;
+}
+.singleInfo p{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+.singleInfo h4{
+    font-size: 16px;
+    font-weight: 700;
+    height: 28px;
+}
+.singleInfo .btn{
+    width: 100%;
+}
+.singleCard{
+    padding: 0 7px;
+}
+.singleCard img{
+    width: 100%;
+    height: 35px;
+}
+.cards{
+    margin-bottom: 20px;
+}
+.singleInfo .form-group{
+    margin-bottom: 0;
+}
+@media (min-width:320px) and (max-width:567px) {
+    .accountInformation{
+        padding: 20px 30px;
+    }
+    .accountInformation h3{
+        width: 55%;
+    }
+    .singleCard.col-lg-4{
+        width: 50%;
+    }
+    .singleCard.col-lg-2{
+        width: 22%;
+    }
+}
+@media (min-width:568px) and (max-width:767px) {
+    .singleCard.col-lg-4{
+        width: 35%;
+    }
+    .singleCard.col-lg-2{
+        width: 20%;
+    }
+}
