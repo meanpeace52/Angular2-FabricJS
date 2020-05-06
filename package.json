@@ -23,7 +23,7 @@
     "@sendgrid/mail": "^6.1.4",
     "angular2-modal": "^3.0.3",
     "aws-sdk": "^2.131.0",
-    "axios": "^0.16.2",
+    "axios": "^0.19.2",
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
     "cookie-parser": "^1.4.3",
